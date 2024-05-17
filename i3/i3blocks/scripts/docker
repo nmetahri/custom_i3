@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Docker block for i3blocks
+# Shows number of running containers with color feedback
+count=$(docker ps -q 2>/dev/null | wc -l)
+echo "${LABEL}${count}"
+if [ "$count" -gt 0 ]; then
+    echo ""           # short text (vide = même que full)
+    echo "#0db7ed"    # bleu Docker si conteneurs actifs
+else
+    echo ""
+    echo "#6C7086"    # gris si aucun conteneur
+fi

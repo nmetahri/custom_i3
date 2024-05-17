@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Installing and configuring tmux..."
+sudo apt update && sudo apt install tmux -y
+
+echo "Activating custom plugins (tmux-resurrect, tmux-continuum, tmux-sensible)"
+mkdir -p ${HOME}/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
+
+cp ./configuration/.tmux.conf ${HOME}
+tmux source ${HOME}/.tmux.conf
+
+
