@@ -109,42 +109,8 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 ❰ Terminal ❱"
-set $ws2 "2 ❰ IDE ❱"
-set $ws3 "3 ❰ Browser ❱"
-set $ws4 "4 ❰ General ❱"
-set $ws5 "5 ❰ Slack ❱"
-set $ws6 "6 ❰ Spotify ❱"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10 ❰ VirtualBox ❱"
-
-# switch to workspace (using variables for consistency with renaming)
-bindsym $mod+ampersand workspace $ws1
-bindsym $mod+eacute workspace $ws2
-bindsym $mod+quotedbl workspace $ws3
-bindsym $mod+apostrophe workspace $ws4
-bindsym $mod+parenleft workspace $ws5
-bindsym $mod+minus workspace $ws6
-bindsym $mod+egrave workspace $ws7
-bindsym $mod+underscore workspace $ws8
-bindsym $mod+ccedilla workspace $ws9
-bindsym $mod+agrave workspace $ws10
-
-# move focused container to workspace (using variables for consistency with renaming)
-bindsym $mod+Shift+ampersand move container to workspace $ws1
-bindsym $mod+Shift+eacute move container to workspace $ws2
-bindsym $mod+Shift+quotedbl move container to workspace $ws3
-bindsym $mod+Shift+apostrophe move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+minus move container to workspace $ws6
-bindsym $mod+Shift+egrave move container to workspace $ws7
-bindsym $mod+Shift+underscore move container to workspace $ws8
-bindsym $mod+Shift+ccedilla move container to workspace $ws9
-bindsym $mod+Shift+agrave move container to workspace $ws10
+# Include workspaces configuration (names and application assignments)
+include ~/.config/i3/workspaces.conf
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
