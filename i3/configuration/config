@@ -170,7 +170,7 @@ bindsym $mod+b exec --no-startup-id ~/.config/i3/scripts/set_wallpaper.bash
 include themes.conf
 
 # Setup monitor(s) if a custom configuration file exists 
-exec_always --no-startup-id sh -c '[ -f ~/.config/i3/monitor_config ] && ~/.config/i3/monitor_config'
+exec --no-startup-id sh -c '[ -f ~/.config/i3/monitor_config ] && ~/.config/i3/monitor_config'
 
 ## Media controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -199,6 +199,8 @@ exec --no-startup-id gnome-flashback
 # Set numlock on on start
 exec --no-startup-id numlockx on
 
+# Monitor script selector menu
+bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/select_xrandr_profile.bash
 
 # Include custom config
 include custom.conf

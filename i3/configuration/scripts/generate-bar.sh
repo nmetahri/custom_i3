@@ -7,13 +7,14 @@ ACTIVE_THEME="$HOME/.config/i3/colors-active.conf"
 # Créer le fichier bar-generated.conf avec la barre complète
 cat > "$BAR_GENERATED" << 'EOF'
 bar {
-	font pango:FontAwesome5Free, FontAwesome5Brands, SymbolsNerdFont, Exo2 15
+	font pango:Symbols Nerd Font Mono, Hack Nerd Font Mono 12, Exo2 15  
 	status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
 	tray_output primary
 	strip_workspace_numbers yes
 	workspace_buttons yes
 	binding_mode_indicator yes
 
+	padding 4px 0
 EOF
 
 # Ajouter les couleurs du thème actif

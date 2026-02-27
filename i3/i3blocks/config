@@ -9,7 +9,7 @@ separator_block_width=10
 command=$SCRIPT_DIR/docker
 color=#0db7ed
 interval=10
-LABEL=🐳 
+LABEL=  
 
 [separator]
 full_text=<span color="#45475A"> | </span>
@@ -19,8 +19,7 @@ separator_block_width=5
 
 [volume]
 command=$SCRIPT_DIR/volume
-#LABEL=♪ 
-LABEL=🔊
+LABEL=󰕾 
 interval=once
 signal=10
 color=#A6E3A1
@@ -33,7 +32,7 @@ separator_block_width=5
 
 [memory]
 command=$SCRIPT_DIR/memory
-label=🧠
+label=🧠 
 interval=5
 color=#CBA6F7
 
