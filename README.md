@@ -12,6 +12,15 @@ It is recommended to install and configure packages in that order :
 - I3
 - Tmux
 
+## External Dependencies
+
+This setup builds and installs from the following external projects:
+
+- **i3blocks** (https://github.com/vivien/i3blocks) — Status bar for i3
+- **i3-gnome** (https://github.com/i3-gnome/i3-gnome.git) — Gnome 3 session integration with i3
+
+Both are automatically cloned, built, and installed by the install script. Check their repositories for license information and updates.
+
 ## How to install a package ?
 
 ### Tmux
